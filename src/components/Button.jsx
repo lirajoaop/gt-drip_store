@@ -6,7 +6,7 @@ export default function Button({
   onClick,
   customPadding = "p-3",
   customWidth = "w-[114px]",
-  customHeight = "w-[40px]",
+  customHeight = "h-[40px]",
   customRounded = "rounded-xl",
   customTextSize = "text-sm",
   customTextColor = "#F5F5F5",
@@ -16,6 +16,7 @@ export default function Button({
   type = "button",
   customBg = "bg-primary",
   id = "",
+  textClassNames = ""
 }) {
   return (
     <ButtonTailwind
@@ -27,7 +28,7 @@ export default function Button({
     >
       {Boolean(text) && (
         <p
-          className={`${customTextColor} ${customLineHeight} ${customTextSize} normal-case items-center justify-center `}
+          className={`${customTextColor} ${customLineHeight} ${customTextSize} ${textClassNames} normal-case items-center justify-center `}
         >
           {text}
         </p>
