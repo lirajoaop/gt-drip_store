@@ -12,8 +12,15 @@ export default function TrendingProducts() {
           <ArrowRightIcon size={24} />
         </div>
       </div>
-      <div>
-        <TrendingCards />
+      <div className="grid grid-cols-4 gap-[24px]">
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
+      <TrendingCards />
       </div>
     </div>
   );
