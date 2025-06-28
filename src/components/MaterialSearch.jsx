@@ -16,7 +16,7 @@ export default function MaterialSearch() {
     >
       <FormControl
         variant="outlined"
-        className="!w-[559px] !h-[60px] bg-[#4747470A] rounded-lg"
+        className="!min-w-[559px] !w-full !h-[60px] bg-[#4747470A] rounded-lg"
       >
         <InputLabel
           htmlFor="search-input"
